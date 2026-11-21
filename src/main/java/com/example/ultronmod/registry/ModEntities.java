@@ -15,7 +15,7 @@ public class ModEntities {
 
     public static final RegistryObject<EntityType<UltronEntity>> ULTRON = ENTITIES.register("ultron",
             () -> EntityType.Builder.of(UltronEntity::new, MobCategory.MONSTER)
-                    .sized(0.7F, 2.1F)
+                    .sized(0.9F, 2.5F)
                     .fireImmune()
                     .clientTrackingRange(10)
                     .build(new ResourceLocation(UltronMod.MODID, "ultron").toString()));

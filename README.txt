@@ -1,19 +1,26 @@
-ULTRON MOD v1.1 - Minecraft 1.20.1 (Forge 47.3.0) - SOURCE PROJECT
+ULTRON MOD v1.2 - Minecraft 1.20.1 (Forge 47.3.0) - SOURCE PROJECT
 
 GET THE .JAR (no install needed): GitHub Actions
-1. Make a free GitHub account, create a new repository, upload ALL files in
-   this folder (including the hidden .github folder).
-2. Open the repo's "Actions" tab -> "Build mod" -> wait ~3-5 minutes.
-3. Click the finished run, download the "ultronmod-jar" artifact, unzip it.
-4. Put the .jar in .minecraft/mods (Forge 1.20.1 installed).
+1. Upload ALL files in this folder to your GitHub repo (overwrite existing).
+   The .github/workflows/build.yml must exist (create it by hand if the upload skips it).
+2. Actions tab -> wait for the green check -> open the run -> download "ultronmod-jar".
+3. Unzip it, put the .jar in your Forge 1.20.1 mods folder.
+   (Delete older ultronmod jars first!)
 
-OR BUILD LOCALLY: JDK 17 + Gradle 8.1.1 (or the Forge 1.20.1 MDK's gradle
-wrapper files copied in), then run:  gradle build
-Jar appears in build/libs/
+ULTRON BOSS (Spawn Eggs tab)
+- Custom 3D model, 2x-detail skin + glow layer (eyes, chest, joints, tubing)
+- Repulsor beam from the hand
+- Unibeam: charges up (particles converge on chest) then fires a 32-block beam
+- Ground Slam: arms up, shockwave ring, knockback + damage
+- Overdrive at 50% HP: lightning, faster, harder hitting, smoke trail, purple boss bar
+- Dramatic multi-explosion death
 
-ABILITIES (Ultron Gauntlet - Combat tab, or craft: 5 iron + 1 Ultron Core)
-- Right-click:            Repulsor blast (40 blocks, damage + small blast)
-- Sneak + Right-click:    Toggle flight + no fall damage (keep gauntlet in inventory)
-- Holding in hand:        Resistance + Regeneration
+ULTRON GAUNTLET (Combat tab, or 5 iron + 1 Ultron Core)
+- Right-click: repulsor blast
+- Sneak + right-click: toggle flight / no fall damage
+- In hand: Resistance + Regeneration
 
-ALSO: Ultron boss mob, Ultron Spawn Egg, Ultron Core (boss drop).
+EDITING THE LOOK
+- Skin: assets/ultronmod/textures/entity/ultron.png (and ultron_glow.png for what lights up)
+- tools/generate_assets.py regenerates model + skin (needs python + Pillow)
+- tools/preview_front.png shows a flat front preview
