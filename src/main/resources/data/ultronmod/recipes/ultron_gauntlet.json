@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "III",
+    "ICI",
+    " I "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "ultronmod:ultron_core"
+    }
+  },
+  "result": {
+    "item": "ultronmod:ultron_gauntlet"
+  }
+}

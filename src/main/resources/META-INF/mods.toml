@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="ultronmod"
+version="1.1.0"
+displayName="Ultron Mod"
+description='''
+Adds Ultron, a boss robot with repulsor beams, a spawn egg, and the Ultron Core.
+'''
+
+[[dependencies.ultronmod]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.ultronmod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
